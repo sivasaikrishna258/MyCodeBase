@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [softwaretestingmaterial]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="testngTest">
+    <classes>
+      <class name="com.CRM.qa.Testcases.Sample"/>
+      <class name="com.CRM.qa.Testcases.ContactsPageTest"/>
+    </classes>
+  </test> <!-- testngTest -->
+  <test name="testngTest1">
+    <classes>
+      <class name="com.CRM.qa.Testcases.Sample1"/>
+    </classes>
+  </test> <!-- testngTest1 -->
+  <test parallel="classes" name="testngTest(failed)">
+    <classes>
+      <class name="com.CRM.qa.Testcases.ContactsPageTest">
+        <methods>
+          <include name="initialization"/>
+          <include name="selectingCheckBoxesOnContactsPageTest"/>
+          <include name="verifyingActionsOnContactsPageTest"/>
+          <include name="createNewUserOnContactsPageTest"/>
+        </methods>
+      </class> <!-- com.CRM.qa.Testcases.ContactsPageTest -->
+    </classes>
+  </test> <!-- testngTest(failed) -->
+</suite> <!-- Failed suite [softwaretestingmaterial] -->

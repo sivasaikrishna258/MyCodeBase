@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="softwaretestingmaterial" parallel="tests" thread-count="2">
+	<test name="testngTest" parallel="methods" thread-count="5">
+		<classes>
+			<class name="com.CRM.qa.Testcases.Sample" />
+
+		</classes>
+	</test>	
+	
+	<test name="testngTest1">
+		<classes>
+			<class name="com.CRM.qa.Testcases.Sample1" />
+		</classes>
+	</test>	
+</suite>
